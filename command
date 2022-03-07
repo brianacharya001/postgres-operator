@@ -10,3 +10,6 @@ kubectl get cm -n pgo
 
 sh -x client-setup.sh
 share the o/p of above command.
+
+
+oc patch machine -n openshift-machine-api --type=merge -p '{"metadata":{"finalizers":null}}' m3adow-infra-westeurope1-5asrt
